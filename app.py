@@ -16,7 +16,7 @@ app = Flask(__name__)
 #The secret key for the session cookies
 app.config['SECRET_KEY'] = 'CPSC449'
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:1234@localhost/inventory_db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://inventory_user:Inventory%40123@localhost/inventory_db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 #Session will be saved to the file system
